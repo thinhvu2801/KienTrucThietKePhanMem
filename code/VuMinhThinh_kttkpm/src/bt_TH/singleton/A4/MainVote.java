@@ -5,6 +5,7 @@ public class MainVote {
 
         User Vungu= new User("Vu");
         Vungu.vote(Candidate.BIDEN);
+        Vungu.vote(Candidate.BIDEN);Vungu.vote(Candidate.BIDEN);Vungu.vote(Candidate.BIDEN);Vungu.vote(Candidate.BIDEN);
         Election.getInstance().print();
     }
 }

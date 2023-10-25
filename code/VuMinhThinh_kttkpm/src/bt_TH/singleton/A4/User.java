@@ -1,7 +1,8 @@
 package bt_TH.singleton.A4;
 
-class User {
+public class User {
     String name;
+    private boolean hasVoted = false;
 
     public User(String name) {
         this.name = name;
@@ -12,6 +13,9 @@ class User {
     }
 
     public void  vote(Candidate c){
-        Election.getInstance().vote(c,name);
+        if (!hasVoted) {
+            Election.getInstance().vote(c,name);
+            hasVoted = true;
+        }
     }
 }
