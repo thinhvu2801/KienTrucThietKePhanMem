@@ -5,20 +5,26 @@ public abstract class Duck {
     IQuackBehavior quackBehavior;
 
     public abstract void display();
+
     public IFlyBehavior getFlyBehavior() {
         return flyBehavior;
     }
-    public void swim(){
+
+    public void swim() {
         System.out.println("Vịt bơi ọc ọc ọc");
     }
+
     public void setFlyBehavior(IFlyBehavior flyBehavior) {
         this.flyBehavior = flyBehavior;
     }
 
-    void performFly(){
+    void performFly() {
         System.out.println(flyBehavior.fly());
     }
-    void performQuack(){ System.out.println(quackBehavior.quack());}
+
+    void performQuack() {
+        System.out.println(quackBehavior.quack());
+    }
 
     public IQuackBehavior getQuackBehavior() {
         return quackBehavior;
