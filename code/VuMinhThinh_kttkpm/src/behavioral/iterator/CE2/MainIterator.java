@@ -3,13 +3,13 @@ package behavioral.iterator.CE2;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.function.Consumer;
 
 public class MainIterator {
-    public static void duyetDSMH(Iterator<MonHoc> ite, Consumer<MonHoc> consumer){
+    public static void inDSMH(Iterator<MonHoc> ite){
         while (ite.hasNext()){
             MonHoc m = ite.next();
-            consumer.accept(m);
+            System.out.println("Tên Môn Học: " + m.tenMH);
+            System.out.println("Số TC: " + m.soTC + "\n");
         }
     }
 
@@ -20,9 +20,8 @@ public class MainIterator {
         list.add(new MonHoc("Anh",3));
         list.add(new MonHoc("Thể dục",2));
 
-        duyetDSMH(list.iterator(), m -> {
-            System.out.println("Tên Môn Học: " + m.tenMH);
-            System.out.println("Số TC: " + m.soTC + "\n");
-        });
+        Iterator<MonHoc> iterator = list.iterator();
+        inDSMH(iterator);
+
     }
 }

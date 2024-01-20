@@ -1,8 +1,8 @@
 package structural.decorator.beverage;
 
-public class HouseBlend extends Beverage{
+public class HouseBlend extends Beverage {
     public HouseBlend(String description) {
-        this.description=description;
+        this.description = description;
     }
 
 

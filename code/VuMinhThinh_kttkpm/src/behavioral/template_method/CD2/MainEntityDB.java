@@ -1,4 +1,4 @@
-package behavioral.template_method.entityDB.CD2;
+package behavioral.template_method.CD2;
 
 public class MainEntityDB {
     public static void main(String[] args) {

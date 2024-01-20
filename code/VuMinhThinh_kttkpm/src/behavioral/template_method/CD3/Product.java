@@ -21,5 +21,4 @@ public class Product {
         return price;
     }
 
-    // You can add other methods as needed
 }
